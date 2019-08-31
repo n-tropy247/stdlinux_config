@@ -26,6 +26,16 @@ chmod u+x nvim.appimage
 
 ## zsh
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+* [Another user already has a good guide on initial config](https://github.com/qxxxb/stdlinux-dotfiles/blob/master/GUIDE.md)
 
 ## zplug
 `git clone https://github.com/b4b4r07/zplug ~/.zplug`
+
+## tmux
+`apt install tmux`
+
+
+## Transferring files
+X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
+My solution is to just use PuTTY's pscp solution.
+On the client machine: `pscp user@server:[source-file] C:\[destination]
