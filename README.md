@@ -1,6 +1,6 @@
 # stdlinux_config
 
-![setup](https://raw.githubusercontent.com/n-tropy247/stdlinux-config/assets/images/stdlinux-setup.png)
+![setup](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
 My Terminal Configuration on stdlinux
 
