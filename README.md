@@ -33,6 +33,7 @@ chmod u+x nvim.appimage
 
 ## tmux
 `apt install tmux`
+* [Easy tmux guide](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
 
 ## Transferring files
