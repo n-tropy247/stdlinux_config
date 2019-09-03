@@ -2,7 +2,7 @@
 
 ![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
-My Terminal Configuration on stdlinux
+My Terminal Configuration on stdlinux.
 
 ## neofetch
 * Non-essential. Just displays OS info in a nice format.
