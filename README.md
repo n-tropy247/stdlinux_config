@@ -13,7 +13,9 @@ cd neofetch-6.1.0
 neofetch
 ```
 * Feel free to alias neofetch to be available globally in your `.bashrc' file:
-```bashalias neofetch="~/neofetch-6.1.0/neofetch'``
+```bash
+alias neofetch="~/neofetch-6.1.0/neofetch"
+```
 
 ## nvim
 ```bash
@@ -32,8 +34,9 @@ sudo apt-get install neovim
 * Note: all references to '~/nvim' in provided files must now be updated to `/usr/bin/nvim'
 
 ## vim-plug
-`curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+```bash
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim```
 * Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim
 
 ## zsh
