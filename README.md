@@ -12,6 +12,8 @@ rm neofetch-6.1.0.tar.gz
 cd neofetch-6.1.0
 neofetch
 ```
+* Feel free to alias neofetch to be available globally in your `.bashrc' file:
+`alias neofetch="~/neofetch-6.1.0/neofetch'
 
 ## nvim
 ```bash
@@ -19,6 +21,15 @@ curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimag
 chmod u+x nvim.appimage
 ./nvim.appimage
 ```
+* On ubuntu, it is easier to install from `apt`:
+```bash
+sudo apt-get install software-properties-common
+sudo apt-get install python-dev python-pip python3-dev python3-pip
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+```
+* Note: all references to '~/nvim' in provided files must now be updated to `/usr/bin/nvim'
 
 ## vim-plug
 `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
@@ -37,8 +48,17 @@ chmod u+x nvim.appimage
 `apt install tmux`
 * [Easy tmux guide](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
+## PuTTY
+* [Download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+* Import the PuTTY configuration reg file provided.
+* PuTTY is configured to connect to stdlinux and use the [Solarized Dark Theme](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
+* If you wish to use the config with another server, simply change the relevant server info and save.
 
 ## Transferring files
-X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
-My solution is to just use PuTTY's pscp solution.
-On the client machine: `pscp user@server:[source-file] C:\[destination]`
+* X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
+* My solution is to just use PuTTY's pscp solution.
+* On the client machine: `pscp user@server:[source-file] C:\[destination]`
+* If you are determined to utilize PuTTY's X11 forwarding, try [XMing](https://sourceforge.net/projects/xming/)
+* PuTTY has the option to enable X11 under "Connection/SSH".
+* You may need to run the following command on the server to make X11 work: `export DISPLAY=:0.0`
+* Avoid using `xclip` while using OMZ. It breaks X11.
