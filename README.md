@@ -39,4 +39,4 @@ chmod u+x nvim.appimage
 ## Transferring files
 X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
 My solution is to just use PuTTY's pscp solution.
-On the client machine: `pscp user@server:[source-file] C:\[destination]
+On the client machine: `pscp user@server:[source-file] C:\[destination]`
