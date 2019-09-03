@@ -91,3 +91,7 @@ apt install tmux
 * PuTTY has the option to enable X11 under "Connection/SSH".
 * You may need to run the following command on the server to make X11 work: `export DISPLAY=:0.0`
 * Avoid using `xclip` while using OMZ. It breaks X11.
+
+## Recognition
+* Thanks to qxxxb for the templates for the dotfiles provided here.
+* I do not know if he wrote them or found them, but his repo is available [here](https://github.com/qxxxb/stdlinux-dotfiles).
