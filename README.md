@@ -23,6 +23,7 @@ chmod u+x nvim.appimage
 ## vim-plug
 `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+* Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim
 
 ## zsh
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
@@ -30,6 +31,7 @@ chmod u+x nvim.appimage
 
 ## zplug
 `git clone https://github.com/b4b4r07/zplug ~/.zplug`
+* Once everything else is installed and all files/dirs are copied over, run `zplug install`
 
 ## tmux
 `apt install tmux`
