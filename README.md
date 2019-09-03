@@ -1,6 +1,6 @@
 # stdlinux_config
 
-![setup](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
+![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
 My Terminal Configuration on stdlinux
 
@@ -39,27 +39,27 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ```
-* Note: all references to '~/nvim' in provided files must now be updated to `/usr/bin/nvim'
+* Note: all references to '~/nvim' in provided files must now be updated to `/usr/bin/nvim'.
 
 ## vim-plug
 ```bash
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-* Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim
+* Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim.
 
 ## zsh
 * Already on stdlinux. Necessary config already available through this repo.
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-* [Another user already has a good guide on initial config](https://github.com/qxxxb/stdlinux-dotfiles/blob/master/GUIDE.md)
+* [Another user already has a good guide on initial config](https://github.com/qxxxb/stdlinux-dotfiles/blob/master/GUIDE.md).
 
 ## zplug
 ```bash
 git clone https://github.com/b4b4r07/zplug ~/.zplug
 ```
-* Once everything else is installed and all files/dirs are copied over, run `zplug install`
+* Once everything else is installed and all files/dirs are copied over, run `zplug install`.
 
 ## tmux
 * Already on stdlinux. See below link for instructions.
