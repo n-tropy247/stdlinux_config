@@ -17,6 +17,12 @@ neofetch
 alias neofetch="~/neofetch-6.1.0/neofetch"
 ```
 
+## git
+* If the server you're working with doesn't have `git`, install it so you can properly clone repos:
+```bash
+sudo apt install git-all
+```
+
 ## nvim
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
@@ -36,19 +42,26 @@ sudo apt-get install neovim
 ## vim-plug
 ```bash
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim```
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 * Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim
 
 ## zsh
-`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 * [Another user already has a good guide on initial config](https://github.com/qxxxb/stdlinux-dotfiles/blob/master/GUIDE.md)
 
 ## zplug
-`git clone https://github.com/b4b4r07/zplug ~/.zplug`
+```bash
+git clone https://github.com/b4b4r07/zplug ~/.zplug
+```
 * Once everything else is installed and all files/dirs are copied over, run `zplug install`
 
 ## tmux
-`apt install tmux`
+```bash
+apt install tmux
+```
 * [Easy tmux guide](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
 ## PuTTY
