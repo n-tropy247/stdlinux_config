@@ -5,6 +5,7 @@
 My Terminal Configuration on stdlinux
 
 ## neofetch
+* Non-essential. Just displays OS info in a nice format.
 * [Download a release](https://github.com/dylanaraps/neofetch/releases/latest)
 ```bash
 tar xvzf neofetch-6.1.0.tar.gz
@@ -18,12 +19,13 @@ alias neofetch="~/neofetch-6.1.0/neofetch"
 ```
 
 ## git
+* Already installed on stdlinux
 * If the server you're working with doesn't have `git`, install it so you can properly clone repos:
 ```bash
 sudo apt install git-all
 ```
 
-## nvim
+## neovim
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
@@ -47,6 +49,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 * Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim
 
 ## zsh
+* Already on stdlinux. Necessary config already available through this repo.
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
@@ -59,12 +62,14 @@ git clone https://github.com/b4b4r07/zplug ~/.zplug
 * Once everything else is installed and all files/dirs are copied over, run `zplug install`
 
 ## tmux
+* Already on stdlinux. See below link for instructions.
 ```bash
 apt install tmux
 ```
 * [Easy tmux guide](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
 ## PuTTY
+* This is my preferred remote connection solution.
 * [Download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 * Import the PuTTY configuration reg file provided.
 * PuTTY is configured to connect to stdlinux and use the [Solarized Dark Theme](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
