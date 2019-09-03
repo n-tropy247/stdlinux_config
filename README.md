@@ -54,6 +54,14 @@ sudo apt-get install neovim
 * PuTTY is configured to connect to stdlinux and use the [Solarized Dark Theme](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
 * If you wish to use the config with another server, simply change the relevant server info and save.
 
+## Powerline fonts
+* If you are using cmd or Powershell to run `bash` on Windows (e.g. Ubuntu on Windows 10), then you may notice that OMZ themes break.
+* These themes require the use of a patched powerline font, and cmd/Powershell will not recognize some of the Unicode characters.
+* My solution is to simply use [ConEmu](https://conemu.github.io/en/Downloads.html) when using `bash` on Windows.
+* [Powerline fonts can be found here](https://github.com/powerline/fonts)
+* ConEmu will allow selection of those fonts (I personally use Meslo Dotted) and fix the missing characters.
+* If you're font isn't appearing in the PuTTY settings ("Window/Appearance"), check the box that says "Allow selection of variable-pitch fonts" and try again.
+
 ## Transferring files
 * X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
 * My solution is to just use PuTTY's pscp solution.
