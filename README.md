@@ -13,7 +13,7 @@ cd neofetch-6.1.0
 neofetch
 ```
 * Feel free to alias neofetch to be available globally in your `.bashrc' file:
-`alias neofetch="~/neofetch-6.1.0/neofetch'
+```bashalias neofetch="~/neofetch-6.1.0/neofetch'``
 
 ## nvim
 ```bash
