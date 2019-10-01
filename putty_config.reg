@@ -111,7 +111,7 @@ Windows Registry Editor Version 5.00
 "WinNameAlways"=dword:00000001
 "WinTitle"=""
 "TermWidth"=dword:000000a0
-"TermHeight"=dword:00000050
+"TermHeight"=dword:00000028
 "Font"="Meslo LG S DZ for Powerline"
 "FontIsBold"=dword:00000000
 "FontCharSet"=dword:00000000
