@@ -81,7 +81,7 @@ apt install tmux
 * My solution is to simply use [ConEmu](https://conemu.github.io/en/Downloads.html) when using `bash` on Windows.
 * [Powerline fonts can be found here](https://github.com/powerline/fonts)
 * ConEmu will allow selection of those fonts (I personally use Meslo Dotted) and fix the missing characters.
-* If you're font isn't appearing in the PuTTY settings (Window/Appearance), check the box that says "Allow selection of variable-pitch fonts" and try again.
+* If your font isn't appearing in the PuTTY settings (Window/Appearance), check the box that says "Allow selection of variable-pitch fonts" and try again.
 
 ## Transferring files
 * X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
