@@ -91,16 +91,11 @@ apt install tmux
 * X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
 * My solution is to just use PuTTY's pscp solution.
 * On the client machine: `pscp user@server:[source-file] C:\[destination]`
-* If you are determined to utilize PuTTY's X11 forwarding, try [XMing](https://sourceforge.net/projects/xming/)
-* PuTTY has the option to enable X11 under "Connection/SSH".
-* You may need to run the following command on the server to make X11 work: `export DISPLAY=:0.0`
-* Avoid using `xclip` while using OMZ. It breaks X11.
-
-## X11
-* The above said, it's possible that you'll want to be able to forward windows over PuTTY.
-* This can be done with [XMing](https://sourceforge.net/projects/xming/files/Xming).
+* If you are determined to utilize X11 forwarding, try [XMing](https://sourceforge.net/projects/xming/).
 * To enable this in PuTTY, install XMing, then under "Connection->SSH->X11" check the "Enable X11 forwarding" box.
 * The display location should be "localhost:0.0"
+* You may need to run the following command on the server to make X11 work: `export DISPLAY=:0.0`
+* Avoid using `xclip` while using OMZ. It breaks X11.
 * Like I said, this tends to work off and on when using zsh, and it doesn't quite work with tmux running at all.
 * Troubleshooting this if you enable it is left to you, I never found it necessary.
 
