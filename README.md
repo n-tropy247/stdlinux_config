@@ -40,7 +40,8 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ```
-* Note: all references to '~/nvim' in provided files must now be updated to `/usr/bin/nvim'.
+### NOTE:
+* All references to '~/nvim' in provided files must be updated to `/usr/bin/nvim'` if you use apt.
 
 ## vim-plug
 ```bash
