@@ -96,6 +96,14 @@ apt install tmux
 * You may need to run the following command on the server to make X11 work: `export DISPLAY=:0.0`
 * Avoid using `xclip` while using OMZ. It breaks X11.
 
+## X11
+* The above said, it's possible that you'll want to be able to forward windows over PuTTY.
+* This can be done with [XMing](https://sourceforge.net/projects/xming/files/Xming).
+* To enable this in PuTTY, install XMing, then under "Connection->SSH->X11" check the "Enable X11 forwarding" box.
+* The display location should be "localhost:0.0"
+* Like I said, this tends to work off and on when using zsh, and it doesn't quite work with tmux running at all.
+* Troubleshooting this if you enable it is left to you, I never found it necessary.
+
 ## Recognition
 * Thanks to qxxxb for the templates for the dotfiles provided here.
 * I do not know if he wrote them or found them, but his repo is available [here](https://github.com/qxxxb/stdlinux-dotfiles).
