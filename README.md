@@ -74,7 +74,7 @@ apt install tmux
 * Import the PuTTY configuration reg file provided.
 * PuTTY is configured to connect to stdlinux and use the [Solarized Dark Theme](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
 * If you wish to use the config with another server, simply change the relevant server info and save.
-###NOTE:
+### NOTE:
 * It's possible that PuTTY might not be looking for sessions keys in the right spot.
 * If your session isn't showing up after importing the registry key, load PuTTY and search for "Sessions" in [procmon](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon).
 * Once you have the correct registry path, just modify it at the top of the .reg file.
