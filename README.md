@@ -1,5 +1,5 @@
 # stdlinux configuration
-### Note: A fair amount of this repo is intended to provide customization options to make it easier and nicer to code on stdlinux from a command-line. It is not necessary to use PuTTY if you follow this guide, but I have personally found it to be more stable than FastX. Please feel free to cherry-pick what you actually want from this repo. Feel free also to modified and re-upload to your own repo. Everything here is free to use.
+### Note: A fair amount of this repo is intended to provide customization options to make it easier and nicer to code on stdlinux from a command-line. It is not necessary to use PuTTY if you follow this guide, but I have personally found it to be more stable than FastX. Please feel free to cherry-pick what you actually want from this repo. Feel free also to modified and re-upload to your own repo. Everything here is free to use. Complete filepaths are included in the repo because it is intended for everything to be copied to your home directory on stdlinux as is (excluding putty_config.reg), then follow the steps detailed here.
 
 ![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
