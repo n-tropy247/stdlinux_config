@@ -21,8 +21,8 @@ alias neofetch="~/neofetch-6.1.0/neofetch"
 
 ## vim
 * A fair amount of people haven't used vim before, so I'll give the basic commands here.
-* To create a file, or edit and existing one, simply enter `vi filename` into your terminal.
-* When in vim, you'll to to hit the INSERT key on your keyboard to begin typing your files contents.
+* To create a file, or edit an existing one, simply enter `vi filename` into your terminal.
+* When in vim, you'll need to hit the INSERT key on your keyboard to begin typing your file's contents.
 * When you are done, hit ESC to exit insert mode, then enter `:wq` to save and exit the file.
 * The `:` enters vim's internal command-line, and `wq` tells vim to "write and quit"
 * vim offers a lot of extensibility and neovim offers even more, so feel free to play around.
