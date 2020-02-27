@@ -39,7 +39,8 @@ sudo apt install git-all
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
-./nvim.appimage
+mv nvim.appimage nvim
+./nvim
 ```
 * On ubuntu, it is easier to install from `apt`:
 ```bash
