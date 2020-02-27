@@ -107,12 +107,6 @@ Plug 'haya14busa/vim-asterisk'
 " Comment operator
 Plug 'tpope/vim-commentary'
 
-" Snippet engine
-Plug 'SirVer/ultisnips'
-
-" Snippets
-Plug 'honza/vim-snippets'
-
 " Tag management
 Plug 'ludovicchabant/vim-gutentags'
 
