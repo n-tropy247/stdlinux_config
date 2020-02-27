@@ -58,7 +58,7 @@ sudo apt-get install neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-* Once everything else is installed and all files/dirs are copied over, run `PlugInstall` from nvim.
+* Once everything else is installed and all files/dirs are copied over, run `:PlugInstall` from nvim.
 
 ## zsh
 * Already on stdlinux. Necessary config already available through this repo.
