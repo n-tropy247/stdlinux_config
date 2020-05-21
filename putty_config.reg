@@ -32,7 +32,7 @@ Windows Registry Editor Version 5.00
 "ProxyTelnetCommand"="connect %host %port\\n"
 "ProxyLogToTerm"=dword:00000001
 "Environment"=""
-"UserName"="castelli.14"
+"UserName"="YourUserNameHere"
 "UserNameFromEnvironment"=dword:00000000
 "LocalUserName"=""
 "NoPTY"=dword:00000000
