@@ -85,6 +85,7 @@ apt install tmux
 * This is my preferred remote connection solution.
 * [Download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 * Import the PuTTY configuration reg file provided.
+* Make sure you set your username in `Connection->Data`
 * PuTTY is configured to connect to stdlinux and use the [Solarized Dark Theme](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
 * If you wish to use the config with another server, simply change the relevant server info and save.
 ### NOTE:
