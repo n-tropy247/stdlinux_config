@@ -1,5 +1,6 @@
 # stdlinux configuration
-## IMPORTANT!!: Recently, stdlinux no longer has zsh available as an alternative shell. I've put in a ticket to remedy this, but as a result this config is currently broken. See the zsh install instructions below for a workaround. In the event that PuTTY is broken because of this issue, a Mate session via FastX2 will work to make the necessary changes.
+~~## IMPORTANT!!: Recently, stdlinux no longer has zsh available as an alternative shell. I've put in a ticket to remedy this, but as a result this config is currently broken. See the zsh install instructions below for a workaround. In the event that PuTTY is broken because of this issue, a Mate session via FastX2 will work to make the necessary changes.~~
+### zsh has been reinstalled by the Linux admins.
 ### Note: A fair amount of this repo is intended to provide customization options to make it easier and nicer to code on stdlinux from a command-line. It is not necessary to use PuTTY if you follow this guide, but I have personally found it to be more stable than FastX. Please feel free to cherry-pick what you actually want from this repo. Feel free also to modify and re-upload to your own repo. Everything here is free to use. 
 ### Complete filepaths are included in the repo because it is intended for everything to be copied to your home directory on stdlinux as is (excluding putty_config.reg), then follow the steps detailed here.
 
@@ -8,7 +9,8 @@
 My Terminal Configuration on stdlinux.
 
 ## zsh
-* Only necessary if ETS doesn't make zsh available again.
+* !Not necessary if on stdlinux!
+* Only needed otherwise if you don't have sudo access.
 * Run the following from a terminal on stdlinux FROM YOUR HOME DIRECTORY:
 ```bash
 wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
