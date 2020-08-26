@@ -18,7 +18,7 @@ cd zsh
 make
 make install
 ```
-* You should now edit `~\.profile` to contain `export SHELL=$HOME/zsh' and 'exec $HOME/zsh -l' instead of the old zsh references.
+* You should now edit `~/.profile` to contain `export SHELL=$HOME/bin/zsh' and 'exec $HOME/bin/zsh -l' instead of the old zsh references.
 
 ## neofetch
 * Non-essential. Just displays OS info in a nice format.
