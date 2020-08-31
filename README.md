@@ -49,7 +49,7 @@ alias neofetch="~/neofetch-6.1.0/neofetch"
 * Already installed on stdlinux
 * If the server you're working with doesn't have `git`, install it so you can properly clone repos:
 ```bash
-sudo apt install git-all
+sudo apt install git
 ```
 
 ## neovim
