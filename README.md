@@ -77,7 +77,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ```
 * Once everything else is installed and all files/dirs are copied over, run `:PlugInstall` from nvim.
 
-## zsh
+## oh-my-zsh
 * Already on stdlinux. Necessary config already available through this repo.
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
