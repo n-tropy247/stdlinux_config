@@ -1,6 +1,3 @@
-# stdlinux configuration
-~~## IMPORTANT!!: Recently, stdlinux no longer has zsh available as an alternative shell. I've put in a ticket to remedy this, but as a result this config is currently broken. See the zsh install instructions below for a workaround. In the event that PuTTY is broken because of this issue, a Mate session via FastX2 will work to make the necessary changes.~~
-### zsh has been reinstalled by the Linux admins.
 ### Note: A fair amount of this repo is intended to provide customization options to make it easier and nicer to code on stdlinux from a command-line. It is not necessary to use PuTTY if you follow this guide, but I have personally found it to be more stable than FastX. Please feel free to cherry-pick what you actually want from this repo. Feel free also to modify and re-upload to your own repo. Everything here is free to use. 
 ### Complete filepaths are included in the repo because it is intended for everything to be copied to your home directory on stdlinux as is (excluding putty_config.reg), then follow the steps detailed here.
 
@@ -75,6 +72,9 @@ sudo apt-get install neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+* You'll want to copy over the top 2 directories from this repo **as-is** and unzip them in your home directory on stdlinux.
+* These provide the plugins that make nvim useful.
+* Leave out `.profile`, `.bashrc`, and `.zshrc` if you don't want to modify your basic terminal environment.
 * Once everything else is installed and all files/dirs are copied over, run `:PlugInstall` from nvim.
 
 ## oh-my-zsh
