@@ -86,7 +86,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 ## zplug
 ```bash
-git clone https://github.com/b4b4r07/zplug ~/.zplug
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 * Once everything else is installed and all files/dirs are copied over, run `zplug install`.
 
