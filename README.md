@@ -116,6 +116,10 @@ apt install tmux
 * [Powerline fonts can be found here](https://github.com/powerline/fonts)
 * ConEmu will allow selection of those fonts (I personally use Meslo Dotted) and fix the missing characters.
 * If your font isn't appearing in the PuTTY settings (Window/Appearance), check the box that says "Allow selection of variable-pitch fonts" and try again.
+* If you are still seeing weird and/or missing characters and aren't on stdlinux, make sure font-awesome is installed
+``` bash
+sudo apt install fonts-font-awesome
+```
 
 ## Transferring files
 * X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
