@@ -1,3 +1,4 @@
+#Provided by Riley Castelli and intended for use on stdlinux at OSU
 source ~/.zplug/init.zsh
 source ~/.zshrc-custom/keys.zsh
 source ~/.zshrc-custom/env.zsh
