@@ -1,3 +1,4 @@
+#Provided by Riley Castelli and intended for use on stdlinux at OSU
 # history file configuration
 [ -z "$HISTFILE"  ] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
