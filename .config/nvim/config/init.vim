@@ -1,3 +1,4 @@
+" Provided by Riley Castelli and intended for use on stdlinux at OSU
 call plug#begin('~/.local/share/nvim/plugged')
 
 " ==========================================================
