@@ -1,3 +1,4 @@
+#Provided by Riley Castelli and intended for use on stdlinux at OSU
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
