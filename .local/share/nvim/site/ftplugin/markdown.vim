@@ -1,3 +1,4 @@
+" Provided by Riley Castelli and intended for use on stdlinux at OSU
 setlocal tabstop=2 shiftwidth=2 expandtab
 
 " This allows bullets to be automatically inserted
