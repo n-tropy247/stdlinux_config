@@ -7,8 +7,8 @@ source ~/.zshrc-custom/plugins.zsh
 source ~/.zshrc-custom/aliases.zsh
 autoload -U +X bashcompinit && bashcompinit
 autoload -U +X compinit && compinit
-bindkey "\e[1~" beginning-of-line
-bindkey "\e[4~" end-of-line
+bindkey "\e[H^" beginning-of-line
+bindkey "\e[F^" end-of-line
 ZSH_THEME="agnoster"
 [ -z "$ZSH_NAME"  ] && [ -f ~/.fzf.bash  ] && source ~/.fzf.bash
 export PATH=~/.local/bin:$PATH
