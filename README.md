@@ -50,8 +50,11 @@ sudo apt install git
 ```
 
 ## neovim
+### NOTE:
+* The current version of NVim doesn't work on stdlinux. You'll need to use an old appimage for the time being.
+* The commands below have been changed to reflect that.
 ```bash
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/download/v0.5.0/nvim.appimage
 chmod u+x nvim.appimage
 mv nvim.appimage nvim
 ./nvim
