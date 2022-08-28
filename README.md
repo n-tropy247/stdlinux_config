@@ -8,7 +8,7 @@ My Terminal Configuration on stdlinux.
 ## zsh
 * !Not necessary if on stdlinux!
 * Only needed otherwise if you don't have sudo access.
-* Run the following from a terminal on stdlinux FROM YOUR HOME DIRECTORY:
+* Run the following FROM YOUR HOME DIRECTORY:
 ```bash
 wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
 mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
