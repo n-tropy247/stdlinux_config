@@ -25,6 +25,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " General
 " ==========================================================
 
+" Sudo edit
+Plug 'lambdalisue/suda.vim'
+
 " File tree
 Plug 'scrooloose/nerdtree'
 
@@ -61,7 +64,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 
 " Simple completion with <TAB>
-Plug 'ajh17/VimCompletesMe'
+Plug 'vim-scripts/VimCompletesMe'
 
 " Visualize undo tree
 Plug 'sjl/gundo.vim'
