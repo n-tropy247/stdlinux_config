@@ -113,6 +113,9 @@ Plug 'tpope/vim-commentary'
 
 " Tag management
 Plug 'ludovicchabant/vim-gutentags'
+if !executable('ctags')
+    let g:gutentags_dont_load = 1
+endif
 
 " New text object based on indentation
 Plug 'michaeljsmith/vim-indent-object'
