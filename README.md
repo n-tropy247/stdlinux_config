@@ -113,11 +113,10 @@ apt install tmux
 * Once you have the correct registry path, just modify it at the top of the .reg file.
 
 ## Powerline fonts
-* If you are using cmd or Powershell to run `bash` on Windows (e.g. Ubuntu on Windows 10), then you may notice that OMZ themes break.
+* If you are using cmd or Powershell to run `bash/zsh` on Windows (e.g. Ubuntu on Windows 10), then you may notice that OMZ themes break.
 * These themes require the use of a patched powerline font, and cmd/Powershell will not recognize some of the Unicode characters.
-* My solution is to simply use [ConEmu](https://conemu.github.io/en/Downloads.html) when using `bash` on Windows.
+* My solution is to simply use [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) when using `bash/zsh` on Windows.
 * [Powerline fonts can be found here](https://github.com/powerline/fonts)
-* ConEmu will allow selection of those fonts (I personally use Meslo Dotted) and fix the missing characters.
 * If your font isn't appearing in the PuTTY settings (Window/Appearance), check the box that says "Allow selection of variable-pitch fonts" and try again.
 * If you are still seeing weird and/or missing characters and aren't on stdlinux, make sure font-awesome is installed
 ``` bash
@@ -126,8 +125,10 @@ sudo apt install fonts-font-awesome
 
 ## Transferring files
 * X11 Forwarding with `zsh` and `tmux` installed is iffy at best.
-* My solution is to just use PuTTY's pscp solution.
-* On the client machine: `pscp user@server:[source-file] C:\[destination]`
+* My solution is to just use PuTTY's sftp solution.
+* On the client machine: `psftp user@server`
+* Provide login credentials, then `cd` to your desired source/destination directory.
+* You can now use `GET filename` to download files to `lpwd` or `PUT filename` to upload files.
 * If you are determined to utilize X11 forwarding, try [XMing](https://sourceforge.net/projects/xming/).
 * To enable this in PuTTY, install XMing, then under "Connection->SSH->X11" check the "Enable X11 forwarding" box.
 * The display location should be `localhost:0.0`
@@ -138,4 +139,4 @@ sudo apt install fonts-font-awesome
 
 ## Recognition
 * Thanks to qxxxb for the templates for the dotfiles provided here.
-* I do not know if he wrote them or found them, but his repo is available [here](https://github.com/qxxxb/stdlinux-dotfiles).
+* I do not know if they wrote them or found them, but their repo is available [here](https://github.com/qxxxb/stdlinux-dotfiles).
