@@ -5,13 +5,8 @@ rm -rf $HOME/.local/nvim
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.tmux
 rm -rf $HOME/.oh-my-zsh
-mkdir $HOME/.rust
-cd $HOME/.rust
-wget https://static.rust-lang.org/dist/rust-nightly-x86_64-unknown-linux-gnu.tar.gz
-tar xf rust-nightly-x86_64-unknown-linux-gnu.tar.gz
-cd $HOME
-mv rust-nightly-x86_64-unknown-linux-gnu rust
 unset ZSH
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
 mv nvim.appimage nvim
