@@ -5,7 +5,7 @@
 Feel free also to modify and re-upload to your own repo.
 Everything here is free to use.
 
-![setup example image](https://github.com/n-tropy247/stdlinux_config/assets/images/stdlinux_setup.PNG)
+![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
 ## This **_will_** reset any zsh/nvim/tmux configurations you already have
 
