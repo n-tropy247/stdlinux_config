@@ -1,29 +1,48 @@
-#Provided by Riley Castelli and intended for use on stdlinux at OSU
-source ~/.zplug/init.zsh
-source ~/.zshrc-custom/keys.zsh
-source ~/.zshrc-custom/env.zsh
-source ~/.zshrc-custom/general.zsh
-source ~/.zshrc-custom/plugins.zsh
-source ~/.zshrc-custom/aliases.zsh
-autoload -U +X bashcompinit && bashcompinit
-autoload -U +X compinit && compinit
+# Provided by Riley Castelli and intended for use on stdlinux at OSU
+
+# Oh My Zsh Configs
+
+# omz path
+export ZSH="$HOME/.oh-my-zsh/"
+
+# omz theme
+# check out a list at https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="clean"
+
+# omz completions
+HYPHEN_INSENSITIVE="true"
+
+# omz autocorrection
+ENABLE_CORRECTION="true"
+
+# omz command progress
+COMPLETION_WAITING_DOTS="true"
+
+# omz plugins
+plugins=(git colored-man-pages command-not-found python zsh-autosuggestions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configs
+
+# Keybindings
 bindkey "\e[H^" beginning-of-line
 bindkey "\e[F^" end-of-line
-ZSH_THEME="agnoster"
+
+# Language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor
+export EDITOR='$HOME/nvim'
+
+# Init fuzzy finder
 [ -z "$ZSH_NAME"  ] && [ -f ~/.fzf.bash  ] && source ~/.fzf.bash
-export PATH=~/.local/bin:$PATH
+
+# Set env vars
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 export TERM=xterm-256color
-xstat () {
-  for target in "${@}"; do
-    inode=$(ls -di "${target}" | cut -d ' ' -f 1)
-    fs=$(df "${target}"  | tail -1 | awk '{print $1}')
-    crtime=$(sudo debugfs -R 'stat <'"${inode}"'>' "${fs}" 2>/dev/null |
-    grep -oP 'crtime.*--\s*\K.*')
-    printf "%s\t%s\n" "${crtime}" "${target}"
-  done
-}
+
+# Important aliases
 alias vi="~/nvim"
-alias tmux="tmux -2"
-if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
-    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-fi
+alias tmux="tmux -u"
+
