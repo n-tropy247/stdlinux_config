@@ -11,8 +11,6 @@ and re-upload to your own repo. Everything here is free to use.
 
 ![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
-## Install all required packages below, then run the below
-
 ## This **_will_** reset any zsh/nvim/tmux configurations you already have
 
 ```bash
@@ -22,31 +20,6 @@ chmod +x install.sh
 ./install.sh
 cd $HOME
 rm -rf stdlinux_config/
-```
-
-## Required packages
-
-### Oh My Zsh
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-### neovim
-
-```bash
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
-chmod u+x nvim.appimage
-mv nvim.appimage nvim
-./nvim
-```
-
-### Tmux Package Manager
-
-```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 ## Important Notes
