@@ -34,3 +34,15 @@ cd $HOME && rm -rf stdlinux_config/
 
 - There will be a document uploaded to Piazza with detailed instructions on using
   sftp and scp. You may choose whichever works best for you.
+
+## Important Configuration
+- This updates the tmux leader from `<C-b>` to `<C-space>` which I found to be easier.
+- Tmux pane navigation is possible with both the mouse or the vim standard pane keys
+  `<C-h>` `<C-j>` `<C-k>` and `<C-l>`
+- The general layout of nvim comes from the base plugin [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+- A lot of the navigation, including `space` as the leader, is unchanged.
+- `<leader>u` will provide an undotree for the current file
+- `<leader>a` will add the current file to [harpoon](https://github.com/ThePrimeagen/harpoon)
+- `<leader>gs` will open a git explorer
+- `<C-e>` will open the harpoon quick switcher
+- Harpooned files can be navigated using `<C-h>` `<C-t>` `<C-n>` and `<C-j>`
