@@ -39,11 +39,10 @@ export EDITOR='$HOME/nvim'
 [ -z "$ZSH_NAME"  ] && [ -f ~/.fzf.bash  ] && source ~/.fzf.bash
 
 # Set env vars
-export PATH=$HOME/openssl/bin:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/openssl/lib:~/opt/rust/rustc/lib:$LD_LIBRARY_PATH
-export LC_ALL="en_US.UTF-8"
-export LDFLAGS="-L /home/username/openssl/lib -Wl,-rpath,/home/username/openssl/lib"
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=~/opt/rust/rustc/lib:$LD_LIBRARY_PATH
 export TERM=xterm-256color
+export OPENSSL_DIR=$HOME/openssl
 source $HOME/.cargo/env
 
 # Important aliases
