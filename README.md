@@ -1,4 +1,4 @@
-# Making stdlinux easier to use
+# Making stdlinux better
 
 ## Note
 
