@@ -17,6 +17,9 @@ make test
 make install
 cd $HOME
 rm -rf $HOME/sslsrc
+wget https://github.com/nelsonenzo/tmux-appimage/releases/download/3.2a/tmux.appimage
+chmod u+x tmux.appimage
+mv tmux.appimage tmux
 unset ZSH
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
