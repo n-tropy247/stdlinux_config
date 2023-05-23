@@ -11,6 +11,8 @@ rm -rf $HOME/.config/tmux
 rm -rf $HOME/.local/nvim
 rm -rf $HOME/.zshrc
 rm -rf $HOME/.bashrc
+rm -rf $HOME/.tmux
+rm -rf $HOME/.oh-my-zsh
 cp $HOME/stdlinux_config/.zshrc $HOME/.zshrc
 cp $HOME/stdlinux_config/.bashrc $HOME/.bashrc
 cp -r $HOME/stdlinux_config/.config $HOME/.config
