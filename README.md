@@ -14,12 +14,12 @@ and re-upload to your own repo. Everything here is free to use.
 ## This **_will_** reset any zsh/nvim/tmux configurations you already have
 
 ```bash
+cd $HOME
 git clone https://github.com/n-tropy247/stdlinux_config
 cd stdlinux_config
 chmod +x install.sh
 ./install.sh
-cd $HOME
-rm -rf stdlinux_config/
+cd $HOME && rm -rf stdlinux_config/
 ```
 
 ## Important Notes
