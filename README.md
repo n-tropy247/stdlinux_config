@@ -2,12 +2,8 @@
 
 ## Note
 
-A fair amount of this repo is intended to provide customization
-options to make it easier and nicer to code on stdlinux from a command-line.
-It is not necessary to use PuTTY if you follow this guide, but I have
-personally found it to be more stable than FastX. Please feel free to
-cherry-pick what you actually want from this repo. Feel free also to modify
-and re-upload to your own repo. Everything here is free to use.
+Feel free also to modify and re-upload to your own repo.
+Everything here is free to use.
 
 ![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
