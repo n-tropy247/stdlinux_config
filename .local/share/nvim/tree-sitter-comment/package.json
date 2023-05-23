@@ -1,0 +1,32 @@
+{
+  "name": "tree-sitter-comment",
+  "version": "0.0.1",
+  "description": "Grammar for code tags like TODO:, FIXME(user):, etc.",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test",
+    "build": "tree-sitter generate",
+    "wasm": "tree-sitter build-wasm --docker",
+    "web": "tree-sitter web-ui",
+    "parse": "tree-sitter parse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gihub.com/stsewd/tree-sitter-comment"
+  },
+  "keywords": [
+    "tree-sitter",
+    "gramar",
+    "code-tags",
+    "comments-tags",
+    "comments"
+  ],
+  "author": "Santos Gallegos",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.14.2"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.1"
+  }
+}

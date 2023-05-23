@@ -1,0 +1,200 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/.local/share/nvim/lazy/nvim-treesitter/lua/nvim-treesitter
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +0 install.lua
+argglobal
+%argdel
+edit install.lua
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+31,33fold
+30,39fold
+41,48fold
+58,63fold
+64,66fold
+68,72fold
+67,73fold
+55,74fold
+54,75fold
+53,76fold
+52,77fold
+85,87fold
+92,95fold
+91,96fold
+82,99fold
+101,104fold
+106,108fold
+113,115fold
+118,120fold
+122,124fold
+112,125fold
+131,133fold
+129,134fold
+141,143fold
+139,145fold
+153,155fold
+159,161fold
+157,162fold
+150,164fold
+168,171fold
+175,177fold
+174,178fold
+185,189fold
+184,190fold
+183,191fold
+182,192fold
+196,198fold
+199,202fold
+205,207fold
+209,211fold
+215,223fold
+234,237fold
+244,246fold
+241,258fold
+233,260fold
+213,264fold
+195,265fold
+272,274fold
+275,277fold
+271,278fold
+281,283fold
+269,285fold
+291,293fold
+299,305fold
+295,306fold
+290,307fold
+289,310fold
+326,328fold
+334,336fold
+339,341fold
+332,344fold
+351,358fold
+363,367fold
+361,368fold
+349,369fold
+370,373fold
+377,379fold
+375,383fold
+386,388fold
+402,408fold
+411,414fold
+420,423fold
+416,424fold
+415,425fold
+410,426fold
+432,435fold
+428,436fold
+427,437fold
+409,438fold
+443,445fold
+442,446fold
+447,449fold
+439,450fold
+451,453fold
+456,458fold
+455,461fold
+318,462fold
+472,474fold
+478,480fold
+471,481fold
+486,491fold
+484,493fold
+470,496fold
+515,517fold
+520,522fold
+527,529fold
+534,540fold
+542,544fold
+546,548fold
+550,552fold
+514,553fold
+507,554fold
+561,563fold
+559,564fold
+557,565fold
+556,566fold
+580,583fold
+578,584fold
+577,585fold
+586,588fold
+591,593fold
+595,599fold
+594,600fold
+573,601fold
+570,602fold
+568,603fold
+612,614fold
+621,623fold
+625,633fold
+643,651fold
+641,652fold
+640,653fold
+654,656fold
+638,657fold
+637,667fold
+619,668fold
+606,669fold
+605,670fold
+678,680fold
+684,686fold
+692,701fold
+703,705fold
+689,708fold
+688,709fold
+711,713fold
+672,718fold
+727,731fold
+724,732fold
+736,740fold
+733,741fold
+745,749fold
+742,750fold
+753,756fold
+751,757fold
+760,763fold
+758,764fold
+767,770fold
+765,771fold
+723,772fold
+let &fdl = &fdl
+let s:l = 24 - ((23 * winheight(0) + 24) / 49)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 24
+normal! 026|
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :
