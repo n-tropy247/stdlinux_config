@@ -5,6 +5,18 @@ rm -rf $HOME/.local/nvim
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.tmux
 rm -rf $HOME/.oh-my-zsh
+mkdir $HOME/openssl
+mkdir $HOME/sslsrc
+cd $HOME/sslsrc
+wget www.openssl.org/source/openssl-1.1.1.tar.gz
+tar zxvf openssl-1.1.1.tar.gz
+cd openssl-1.1.1
+./config --prefix=$HOME/openssl --openssldir=$HOME/openssl no-ssl2
+make
+make test
+make install
+cd $HOME
+rm -rf $HOME/sslsrc
 unset ZSH
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
