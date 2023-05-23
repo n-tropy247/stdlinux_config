@@ -6,6 +6,7 @@ rm -rf $HOME/.zshrc
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.tmux
 rm -rf $HOME/.oh-my-zsh
+unset ZSH
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
