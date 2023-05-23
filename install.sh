@@ -6,4 +6,4 @@ rm -rf ~/.bashrc
 cp ./.zshrc ~/.zshrc
 cp ./.bashrc ~/.bashrc
 cp -r ./.config ~/.config
-
+source ~/.zshrc
