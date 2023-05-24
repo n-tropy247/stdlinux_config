@@ -20,6 +20,7 @@ rm -rf $HOME/sslsrc
 git clone https://github.com/git/git
 cd git
 make configure && ./configure --prefix=$HOME/git && make && make install
+export PATH=$HOME/git:$PATH
 wget https://github.com/nelsonenzo/tmux-appimage/releases/download/3.2a/tmux.appimage
 chmod u+x tmux.appimage
 mv tmux.appimage tmux
