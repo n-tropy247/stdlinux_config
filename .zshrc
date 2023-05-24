@@ -39,7 +39,7 @@ export EDITOR='$HOME/nvim'
 [ -z "$ZSH_NAME"  ] && [ -f ~/.fzf.bash  ] && source ~/.fzf.bash
 
 # Set env vars
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/git:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=~/opt/rust/rustc/lib:$LD_LIBRARY_PATH
 export TERM=xterm-256color
 export OPENSSL_DIR=$HOME/openssl
