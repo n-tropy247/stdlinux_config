@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh/"
 
 # omz theme
 # check out a list at https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="clean"
+ZSH_THEME="crcandy"
 
 # omz completions
 HYPHEN_INSENSITIVE="true"
