@@ -1,7 +1,0 @@
-node_modules/
-/target
-build/
-parser/
-*.wasm
-test.vim
-Session.vim
