@@ -36,6 +36,12 @@ cd $HOME && rm -rf stdlinux_config/
   sftp and scp. You may choose whichever works best for you.
 
 ## Important Configuration
+
+- You can install useful LSPs using `:MasonInstall lsp_name`
+  I suggest at least `:MasonInstall c` and `:MasonInstall asm-lsp`
+- Similarly, tree-sitter parsers can be installed with `:TSInstall ts_name`
+  I suggest at least `:TSInstall c` and `:TSInstall vim`
+  There are many more that are useful, so experiment!
 - This updates the tmux leader from `<C-b>` to `<C-space>` which I found to be easier.
 - Tmux pane navigation is possible with both the mouse or the vim standard pane keys
   `<C-h>` `<C-j>` `<C-k>` and `<C-l>`
