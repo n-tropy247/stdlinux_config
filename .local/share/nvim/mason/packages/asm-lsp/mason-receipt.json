@@ -1,1 +1,0 @@
-{"name":"asm-lsp","links":{"opt":{},"share":{},"bin":{"asm-lsp":"bin\/asm-lsp"}},"secondary_sources":[],"schema_version":"1.1","primary_source":{"type":"registry+v1","source":{"version":"0.3.2","crate":"asm-lsp","locked":false},"id":"pkg:cargo\/asm-lsp@0.3.2?locked=false"},"metrics":{"completion_time":1684881070998,"start_time":1684880973406}}
