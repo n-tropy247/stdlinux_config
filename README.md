@@ -1,13 +1,40 @@
 # Making stdlinux better
 
+## Pre-requisites
+
+### Windows Users
+
+You will need a terminal that supports 256 colors and a nerd font.
+
+- If you're on Windows 11, you have **Windows Terminal** pre-installed.
+- If you're on Windows 10, you can download it [here.](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
+- If you're on anything older, you'll have to use something like [ConEmu.](https://conemu.github.io/)
+- For any version of Windows, you can download nerd fonts from [the official website.](https://conemu.github.io/)
+
+### Mac Users
+
+You will also need a terminal that supports 256 colors and a nerd font.
+
+- To get nerd fonts, install [Homebrew](https://brew.sh/) and follow [this guide.](https://www.geekbits.io/how-to-install-nerd-fonts-on-mac/)
+- To get the correct color space, either switch to [iterm2](https://iterm2.com/)
+  or install a [patched screen.](https://gist.github.com/shawnbot/3277580)
+
+### Linux Users
+
+You know your way around your distro's package manager if you daily drive Linux.\
+Make sure your terminal supports xterm-256colors and you have a nerd font installed.\
+Check `echo $TERM` to determine your terminal type.
+
 ## Note
 
-Feel free also to modify and re-upload to your own repo.
+Feel free also to modify and re-upload to your own repo.\
 Everything here is free to use.
 
 ![setup example image](https://github.com/n-tropy247/stdlinux_config/blob/assets/images/stdlinux_setup.PNG)
 
-## This **_will_** reset any zsh/nvim/tmux configurations you already have
+## Installation
+
+### This **_will_** reset any zsh/nvim/tmux configurations you already have
 
 ```bash
 cd $HOME
