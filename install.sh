@@ -50,8 +50,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/n-tropy247/astronvim_config.git ~/.config/nvim/lua/user
 
-# Copy over bashrc
+# Copy over bashrc and tmux conf
 cp $HOME/stdlinux_config/.bashrc $HOME/.bashrc
+mkdir $HOME/.config/tmux
+cp $HOME/stdlinux_config/tmux.conf $HOME/.config/tmux/
 
 # Install OMZ and some plugins
 unset ZSH
