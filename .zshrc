@@ -48,4 +48,5 @@ source $HOME/.cargo/env
 # Important aliases
 alias vi="~/nvim"
 alias tmux="~/tmux -u"
+alias git="/usr/bin/git"
 
