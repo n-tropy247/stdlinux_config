@@ -1,4 +1,5 @@
-# ~~Making stdlinux better~~ This repo is currently broken due to unexpected updates to stdlinux.
+# ~~Making stdlinux better~~
+# This repo is currently broken due to unexpected updates to stdlinux.
 # As of now, I am unable to fix it because I no longer have ssh access to the stdlinux servers.
 # I apologize for the inconvenience.
 
